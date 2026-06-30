@@ -70,7 +70,7 @@ export default function Journey() {
             <img 
               alt="Manish Meditating at Sunrise" 
               className="w-full h-full object-cover object-right" 
-              src="/heroimg.webp"
+              src="/img3.webp"
             />
           </picture>
           {/* Gradient to blend image with ivory background on the left */}

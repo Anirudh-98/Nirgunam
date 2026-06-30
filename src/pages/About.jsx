@@ -48,7 +48,7 @@ export default function About() {
         <div className="absolute inset-0 z-0">
           <picture>
             <source media="(max-width: 768px)" srcSet="/img2.webp" />
-            <img alt="Manish Meditating" className="w-full h-full object-cover object-right lg:object-center mix-blend-multiply opacity-90" src="/heroimg.webp" />
+            <img alt="Manish Meditating" className="w-full h-full object-cover object-right lg:object-center mix-blend-multiply opacity-90" src="/img2.webp" />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-[#e6dfd1] via-[#e6dfd1]/80 to-transparent"></div>
         </div>

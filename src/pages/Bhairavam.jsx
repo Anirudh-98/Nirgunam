@@ -23,7 +23,7 @@ export default function Bhairavam() {
             <img 
               alt="Bhairavam Meditation" 
               className="w-full h-full object-cover object-right lg:object-center mix-blend-multiply opacity-90" 
-              src="/bhairavam.png"
+              src="/img4.webp"
               onError={(e) => { e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuC9nMkGHy1eUFkJWPrvjBW6fH4yHw4IpClhTC8bKCtaNK8sTOJHanH_4l0A09y1ikBB4n2h6CpAhrqJTXGdCqid3TJlxRya5sEAzDID1C4CejMYP10JFPxUKLB_R5HK_BsHt-8duFYzXQcel0ZED1pp79w6y9e-8d_Fgua8lAZbjzEMMgHWc3jempCK2NbHjjlvUTv4J2Ks8Nhib5D-wz5nWuCkOHcvvJlFs_rObEGocbGv1pEi5MkHxVwVa1vXZdrL1yOiEU-VeYub" }}
             />
           </picture>

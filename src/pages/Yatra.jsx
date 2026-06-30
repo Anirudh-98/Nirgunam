@@ -49,7 +49,7 @@ export default function Yatra() {
             <img 
               alt="Yatra Meditation" 
               className="w-full h-full object-cover object-center mix-blend-multiply opacity-90" 
-              src="/heroimg.webp"
+              src="/img2.webp"
               onError={(e) => { e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuDQq0s45XzZ-Qz7l9q3R475_H6g47t8P6Z_9239WfX2062x28x_8992_803fQx3446-f_904xQ_5H1Y96939b4bX9QW5Z-5_VzX6691461993444_2hG_y9-7_R7-0243_z28V1z-2y9x985qQ6_Z-4Q58bX5716W4-x_2209q93Wq990xZ-y-V3Qy7Z3_0b2z6-23V46_8-6fH-Q91_qXz-189_01b22XfH-xX2q-Q1Z-W35x4QW44Q" }}
             />
           </picture>
