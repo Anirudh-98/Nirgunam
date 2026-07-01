@@ -113,58 +113,61 @@ export default function Home() {
       <section className="py-section-gap px-[5%] bg-surface">
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Card 1: Bhairavam */}
-          <Link to="/bhairavam" className="scroll-reveal group relative aspect-[3/4] rounded-2xl overflow-hidden museum-shadow block">
-            <img 
-              alt="Bhairavam" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQUqFI2yDsRb9Kb3IVOoWBqwVbFSmbRU7VEPr7l9r9_rz_MIRG6r_I_oYOd8vY4QQnI38yG0jF9-03smXFuV92VIcapH603Dpb1c6r3mSZn_QOwTN1hHhTyWbbIgDts78LubtH7rFeCByGD5EJyQSxmHhX1pTkUEovlt9HjgfudhOfFHUDonS9WBnNtmJRujaHic2FrwLseO83bmIEYRxv1TYLOIC8yyMQoSzu2lQC9--Wf5_rlmt6nwk9IpysSlBEteyGV2QjRWp" 
-            />
-            {/* Top Left Icon without background circle */}
-            <div className="absolute top-8 left-8">
-              <span className="material-symbols-outlined text-white text-3xl">self_improvement</span>
+          <div className="scroll-reveal">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
+              <img 
+                alt="Bhairavam" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQUqFI2yDsRb9Kb3IVOoWBqwVbFSmbRU7VEPr7l9r9_rz_MIRG6r_I_oYOd8vY4QQnI38yG0jF9-03smXFuV92VIcapH603Dpb1c6r3mSZn_QOwTN1hHhTyWbbIgDts78LubtH7rFeCByGD5EJyQSxmHhX1pTkUEovlt9HjgfudhOfFHUDonS9WBnNtmJRujaHic2FrwLseO83bmIEYRxv1TYLOIC8yyMQoSzu2lQC9--Wf5_rlmt6nwk9IpysSlBEteyGV2QjRWp" 
+              />
+              <div className="absolute top-8 left-8">
+                <span className="material-symbols-outlined text-white text-3xl">self_improvement</span>
+              </div>
             </div>
-            {/* Gradient and Bottom Text overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-display text-3xl text-white mb-2">Bhairavam</h3>
-              <p className="font-body text-white/80 text-sm font-light">The path beyond description.</p>
-            </div>
-          </Link>
+            <h3 className="font-display text-3xl mb-4 text-primary-container">Bhairavam</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">The path beyond description.</p>
+            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/bhairavam">
+              Explore Bhairavam <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            </Link>
+          </div>
 
           {/* Card 2: Yatra */}
-          <Link to="/yatra" className="scroll-reveal group relative aspect-[3/4] rounded-2xl overflow-hidden museum-shadow block" style={{ transitionDelay: '200ms' }}>
-            <img 
-              alt="Yatra" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPzKiDM1tzqRxpc6DNRpfwRy9Eww3lhGNV6fG0n4nKQTDxZJvLxQkmrJT7M2TtywQ6xaYevj2DDgLW0KZuEoi4aInh9h3HWvn9owpVGl7CLoo73MOxY9VQPJ2IcxI0mpmBA21qHk-wq2CNjY2CiHMz8tfzTjMbSFR5ZvF1kNf8cTvp9ycK4C7pfYXSKQDiNCq56va78_fskup1sGWwXQD0OXe1i-pGtnxZjsx_31ikXwc3JiGsRQEecEDlPcrVJPzB_lR7BLVSSMHr" 
-            />
-            {/* Top Left Icon without background circle */}
-            <div className="absolute top-8 left-8">
-              <span className="material-symbols-outlined text-white text-3xl">temple_hindu</span>
+          <div className="scroll-reveal" style={{ transitionDelay: '200ms' }}>
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
+              <img 
+                alt="Yatra" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPzKiDM1tzqRxpc6DNRpfwRy9Eww3lhGNV6fG0n4nKQTDxZJvLxQkmrJT7M2TtywQ6xaYevj2DDgLW0KZuEoi4aInh9h3HWvn9owpVGl7CLoo73MOxY9VQPJ2IcxI0mpmBA21qHk-wq2CNjY2CiHMz8tfzTjMbSFR5ZvF1kNf8cTvp9ycK4C7pfYXSKQDiNCq56va78_fskup1sGWwXQD0OXe1i-pGtnxZjsx_31ikXwc3JiGsRQEecEDlPcrVJPzB_lR7BLVSSMHr" 
+              />
+              <div className="absolute top-8 left-8">
+                <span className="material-symbols-outlined text-white text-3xl">temple_hindu</span>
+              </div>
             </div>
-            {/* Gradient and Bottom Text overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-display text-3xl text-white mb-2">Yatra</h3>
-              <p className="font-body text-white/80 text-sm font-light">Sacred journeys that transform.</p>
-            </div>
-          </Link>
+            <h3 className="font-display text-3xl mb-4 text-primary-container">Yatra</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">Sacred journeys that transform.</p>
+            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/yatra">
+              Explore Yatra <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            </Link>
+          </div>
 
           {/* Card 3: Meditation */}
-          <Link to="/journey" className="scroll-reveal group relative aspect-[3/4] rounded-2xl overflow-hidden museum-shadow block" style={{ transitionDelay: '400ms' }}>
-            <img 
-              alt="Meditation" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYe2qJVkBNRTu32aojzlEVc7p5fx3nNgQDr_RAY0JRepGyeXTuViUvp3SC4VCJ27dpUvqhzVkOr10-xZi3fAJK-m45v9P789XqNlwZH5iIkhAQWJSUTuDm-8zDWc_Q3kiqWFnn3lxetiPVYh6WaN5yukQA2ZTdM2sRNA4KNzQhvto6nGwwdU5Eded21jdvzpi13bxJb166ycQQNkdrwR3oQfoh1XwSr4M_0a24IjNjVvf3AgBY4qf4wwoZCanPHt-fygj5capt7iK" 
-            />
-            {/* Top Left Icon without background circle */}
-            <div className="absolute top-8 left-8">
-              <span className="material-symbols-outlined text-white text-3xl">spa</span>
+          <div className="scroll-reveal" style={{ transitionDelay: '400ms' }}>
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
+              <img 
+                alt="Meditation" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYe2qJVkBNRTu32aojzlEVc7p5fx3nNgQDr_RAY0JRepGyeXTuViUvp3SC4VCJ27dpUvqhzVkOr10-xZi3fAJK-m45v9P789XqNlwZH5iIkhAQWJSUTuDm-8zDWc_Q3kiqWFnn3lxetiPVYh6WaN5yukQA2ZTdM2sRNA4KNzQhvto6nGwwdU5Eded21jdvzpi13bxJb166ycQQNkdrwR3oQfoh1XwSr4M_0a24IjNjVvf3AgBY4qf4wwoZCanPHt-fygj5capt7iK" 
+              />
+              <div className="absolute top-8 left-8">
+                <span className="material-symbols-outlined text-white text-3xl">spa</span>
+              </div>
             </div>
-            {/* Gradient and Bottom Text overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-display text-3xl text-white mb-2">Meditation</h3>
-              <p className="font-body text-white/80 text-sm font-light">The gateway to inner silence.</p>
-            </div>
-          </Link>
+            <h3 className="font-display text-3xl mb-4 text-primary-container">Meditation</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">The gateway to inner silence.</p>
+            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/journey">
+              Explore Meditation <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            </Link>
+          </div>
         </div>
       </section>
 
