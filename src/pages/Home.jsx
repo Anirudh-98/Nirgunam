@@ -120,10 +120,13 @@ export default function Home() {
                 <span className="material-symbols-outlined text-white">temple_hindu</span>
               </div>
             </div>
-            <h3 className="font-display text-3xl mb-4 text-primary-container">Yatra</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">Sacred pilgrimages and transformative journeys to the heart of the Himalayas.</p>
-            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="#">
-              Explore Yatra <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">About</span>
+            <h3 className="font-display text-3xl mb-3 text-primary-container">Manish Nirgunam</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
+              A reflecting spiritual being — not a guru, not a teacher. Just someone deeply connected to the truth of existence, sharing from lived experience.
+            </p>
+            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="/about">
+              Explore About <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
             </a>
           </div>
           {/* Bhairavam */}
@@ -134,9 +137,12 @@ export default function Home() {
                 <span className="material-symbols-outlined text-white">self_improvement</span>
               </div>
             </div>
-            <h3 className="font-display text-3xl mb-4 text-primary-container">Bhairavam</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">The path beyond description. Ancient wisdom refined for the modern conscious mind.</p>
-            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="#">
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">The Practice</span>
+            <h3 className="font-display text-3xl mb-3 text-primary-container">What is Bhairavam?</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
+              The pulse of the universe. The silence within. Beyond description — Bhairavam is already alive inside you right now, waiting to be seen.
+            </p>
+            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="/bhairavam">
               Explore Bhairavam <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
             </a>
           </div>
@@ -148,10 +154,13 @@ export default function Home() {
                 <span className="material-symbols-outlined text-white">volunteer_activism</span>
               </div>
             </div>
-            <h3 className="font-display text-3xl mb-4 text-primary-container">Spiritual Activities</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">Serving through conscious action, ritual devotion, and community meditation.</p>
-            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="#">
-              Explore Activities <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">Sri Mata Group</span>
+            <h3 className="font-display text-3xl mb-3 text-primary-container">Our 3 Wings</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
+              Yatra, Products, and Dharmic Classes — three pillars serving the Sanatana Dharma with devotion and purpose across India.
+            </p>
+            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="/spiritual-activities">
+              Explore Our Wings <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
             </a>
           </div>
         </div>
