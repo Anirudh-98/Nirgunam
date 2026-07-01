@@ -112,57 +112,59 @@ export default function Home() {
       {/* Three Pathways */}
       <section className="py-section-gap px-[5%] bg-surface">
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Yatra */}
-          <div className="scroll-reveal">
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
-              <img alt="Yatra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPzKiDM1tzqRxpc6DNRpfwRy9Eww3lhGNV6fG0n4nKQTDxZJvLxQkmrJT7M2TtywQ6xaYevj2DDgLW0KZuEoi4aInh9h3HWvn9owpVGl7CLoo73MOxY9VQPJ2IcxI0mpmBA21qHk-wq2CNjY2CiHMz8tfzTjMbSFR5ZvF1kNf8cTvp9ycK4C7pfYXSKQDiNCq56va78_fskup1sGWwXQD0OXe1i-pGtnxZjsx_31ikXwc3JiGsRQEecEDlPcrVJPzB_lR7BLVSSMHr" />
-              <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-xl p-3 rounded-full border border-white/30">
-                <span className="material-symbols-outlined text-white">temple_hindu</span>
-              </div>
+          {/* Card 1: Bhairavam */}
+          <Link to="/bhairavam" className="scroll-reveal group relative aspect-[3/4] rounded-2xl overflow-hidden museum-shadow block">
+            <img 
+              alt="Bhairavam" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQUqFI2yDsRb9Kb3IVOoWBqwVbFSmbRU7VEPr7l9r9_rz_MIRG6r_I_oYOd8vY4QQnI38yG0jF9-03smXFuV92VIcapH603Dpb1c6r3mSZn_QOwTN1hHhTyWbbIgDts78LubtH7rFeCByGD5EJyQSxmHhX1pTkUEovlt9HjgfudhOfFHUDonS9WBnNtmJRujaHic2FrwLseO83bmIEYRxv1TYLOIC8yyMQoSzu2lQC9--Wf5_rlmt6nwk9IpysSlBEteyGV2QjRWp" 
+            />
+            {/* Top Left Icon without background circle */}
+            <div className="absolute top-8 left-8">
+              <span className="material-symbols-outlined text-white text-3xl">self_improvement</span>
             </div>
-            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">About</span>
-            <h3 className="font-display text-3xl mb-3 text-primary-container">Manish Nirgunam</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
-              A reflecting spiritual being — not a guru, not a teacher. Just someone deeply connected to the truth of existence, sharing from lived experience.
-            </p>
-            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="/about">
-              Explore About <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
-            </a>
-          </div>
-          {/* Bhairavam */}
-          <div className="scroll-reveal" style={{ transitionDelay: '200ms' }}>
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
-              <img alt="Bhairavam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQUqFI2yDsRb9Kb3IVOoWBqwVbFSmbRU7VEPr7l9r9_rz_MIRG6r_I_oYOd8vY4QQnI38yG0jF9-03smXFuV92VIcapH603Dpb1c6r3mSZn_QOwTN1hHhTyWbbIgDts78LubtH7rFeCByGD5EJyQSxmHhX1pTkUEovlt9HjgfudhOfFHUDonS9WBnNtmJRujaHic2FrwLseO83bmIEYRxv1TYLOIC8yyMQoSzu2lQC9--Wf5_rlmt6nwk9IpysSlBEteyGV2QjRWp" />
-              <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-xl p-3 rounded-full border border-white/30">
-                <span className="material-symbols-outlined text-white">self_improvement</span>
-              </div>
+            {/* Gradient and Bottom Text overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-display text-3xl text-white mb-2">Bhairavam</h3>
+              <p className="font-body text-white/80 text-sm font-light">The path beyond description.</p>
             </div>
-            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">The Practice</span>
-            <h3 className="font-display text-3xl mb-3 text-primary-container">What is Bhairavam?</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
-              The pulse of the universe. The silence within. Beyond description — Bhairavam is already alive inside you right now, waiting to be seen.
-            </p>
-            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="/bhairavam">
-              Explore Bhairavam <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
-            </a>
-          </div>
-          {/* Activities */}
-          <div className="scroll-reveal" style={{ transitionDelay: '400ms' }}>
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
-              <img alt="Activities" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYe2qJVkBNRTu32aojzlEVc7p5fx3nNgQDr_RAY0JRepGyeXTuViUvp3SC4VCJ27dpUvqhzVkOr10-xZi3fAJK-m45v9P789XqNlwZH5iIkhAQWJSUTuDm-8zDWc_Q3kiqWFnn3lxetiPVYh6WaN5yukQA2ZTdM2sRNA4KNzQhvto6nGwwdU5Eded21jdvzpi13bxJb166ycQQNkdrwR3oQfoh1XwSr4M_0a24IjNjVvf3AgBY4qf4wwoZCanPHt-fygj5capt7iK" />
-              <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-xl p-3 rounded-full border border-white/30">
-                <span className="material-symbols-outlined text-white">volunteer_activism</span>
-              </div>
+          </Link>
+
+          {/* Card 2: Yatra */}
+          <Link to="/yatra" className="scroll-reveal group relative aspect-[3/4] rounded-2xl overflow-hidden museum-shadow block" style={{ transitionDelay: '200ms' }}>
+            <img 
+              alt="Yatra" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPzKiDM1tzqRxpc6DNRpfwRy9Eww3lhGNV6fG0n4nKQTDxZJvLxQkmrJT7M2TtywQ6xaYevj2DDgLW0KZuEoi4aInh9h3HWvn9owpVGl7CLoo73MOxY9VQPJ2IcxI0mpmBA21qHk-wq2CNjY2CiHMz8tfzTjMbSFR5ZvF1kNf8cTvp9ycK4C7pfYXSKQDiNCq56va78_fskup1sGWwXQD0OXe1i-pGtnxZjsx_31ikXwc3JiGsRQEecEDlPcrVJPzB_lR7BLVSSMHr" 
+            />
+            {/* Top Left Icon without background circle */}
+            <div className="absolute top-8 left-8">
+              <span className="material-symbols-outlined text-white text-3xl">temple_hindu</span>
             </div>
-            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">Sri Mata Group</span>
-            <h3 className="font-display text-3xl mb-3 text-primary-container">Our 3 Wings</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
-              Yatra, Products, and Dharmic Classes — three pillars serving the Sanatana Dharma with devotion and purpose across India.
-            </p>
-            <a className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" href="/spiritual-activities">
-              Explore Our Wings <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
-            </a>
-          </div>
+            {/* Gradient and Bottom Text overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-display text-3xl text-white mb-2">Yatra</h3>
+              <p className="font-body text-white/80 text-sm font-light">Sacred journeys that transform.</p>
+            </div>
+          </Link>
+
+          {/* Card 3: Meditation */}
+          <Link to="/journey" className="scroll-reveal group relative aspect-[3/4] rounded-2xl overflow-hidden museum-shadow block" style={{ transitionDelay: '400ms' }}>
+            <img 
+              alt="Meditation" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYe2qJVkBNRTu32aojzlEVc7p5fx3nNgQDr_RAY0JRepGyeXTuViUvp3SC4VCJ27dpUvqhzVkOr10-xZi3fAJK-m45v9P789XqNlwZH5iIkhAQWJSUTuDm-8zDWc_Q3kiqWFnn3lxetiPVYh6WaN5yukQA2ZTdM2sRNA4KNzQhvto6nGwwdU5Eded21jdvzpi13bxJb166ycQQNkdrwR3oQfoh1XwSr4M_0a24IjNjVvf3AgBY4qf4wwoZCanPHt-fygj5capt7iK" 
+            />
+            {/* Top Left Icon without background circle */}
+            <div className="absolute top-8 left-8">
+              <span className="material-symbols-outlined text-white text-3xl">spa</span>
+            </div>
+            {/* Gradient and Bottom Text overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-display text-3xl text-white mb-2">Meditation</h3>
+              <p className="font-body text-white/80 text-sm font-light">The gateway to inner silence.</p>
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -237,31 +239,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Journey of Nirgunam */}
+      {/* Bhairavam Products Section */}
       <section className="py-section-padding px-[5%] bg-surface-container-low">
         <div className="max-w-[1600px] mx-auto w-full">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 scroll-reveal">
             <div>
-              <span className="text-[12px] uppercase tracking-[0.3em] text-secondary font-bold mb-6 block">Our 3 Wings</span>
-              <h2 className="font-display text-5xl lg:text-[56px] leading-[1.1] text-primary-container">The Journey of Nirgunam</h2>
+              <span className="text-[12px] uppercase tracking-[0.3em] text-secondary font-bold mb-6 block">Dharmic Products</span>
+              <h2 className="font-display text-5xl lg:text-[56px] leading-[1.1] text-primary-container">Bhairavam</h2>
             </div>
-            <a className="mt-8 md:mt-0 text-[11px] uppercase font-bold tracking-widest text-on-surface-variant flex items-center gap-2 hover:text-secondary transition-all" href="#">
-              View All Wings <span className="material-symbols-outlined text-sm">arrow_outward</span>
-            </a>
+            <Link className="mt-8 md:mt-0 text-[11px] uppercase font-bold tracking-widest text-on-surface-variant flex items-center gap-2 hover:text-secondary transition-all" to="/products">
+              View All Products <span className="material-symbols-outlined text-sm">arrow_outward</span>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow">
-              <img alt="Wing 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPZwojtkfZWLWws9MAQT4P_a873e00LpdIGRMsxOJ8wflAjZQfhXspPIz26saSkAC8MOltQPElXX7WsZWrUa1Ptf-jBo18refmep2KOBwHxF1uqDiIjHN9ECo364vsmYYM-BetOfpQtPxkPZMkGYGZWKX6kBd7bN9mJyRQPMiTtEqc_P91cYkJxn_kvAF8HENIE8ZpRsigF4GJ50sriYUJBua-xczCvZi2GtKJjZPpkTA0wBfKQ9SWB2cJJNNNblafroLRu336kdU" />
-              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end"><span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Wing 01</span><h3 className="font-display text-4xl text-surface mb-2">Yatra</h3><p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">Sacred pilgrimages and transformative journeys to the heart of the Himalayas.</p></div>
-            </div>
-            <div className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow" style={{ transitionDelay: '200ms' }}>
-              <img alt="Wing 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw69PPqBOaZ03t2aB1fJNo-kCk06l1DMYsbwet1VWwPjEc9m2Vr08jB236_jAm4AOaV70WxfdmqVw7-07sNUGbOTsf3s30IpOZTxlEuF12_Aj3Z716kX6R366AiNzmxsdViGsXeE7rpuJgCShmO9JTlX4ddMEZJVAs7KNvRakYfRjmPhbiwfEeoOoQj7vHLLGF0x7KNk1X8K1-uFvhc2V9j-drecIvllgs533pkgCNVWWxv5G6g3WTnpJ9NhrgY98xD0IE5Sna5SLL" />
-              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end"><span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Wing 02</span><h3 className="font-display text-4xl text-surface mb-2">Bhairavam</h3><p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">The path beyond description. Ancient wisdom refined for the modern conscious mind.</p></div>
-            </div>
-            <div className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow" style={{ transitionDelay: '400ms' }}>
-              <img alt="Wing 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nMkGHy1eUFkJWPrvjBW6fH4yHw4IpClhTC8bKCtaNK8sTOJHanH_4l0A09y1ikBB4n2h6CpAhrqJTXGdCqid3TJlxRya5sEAzDID1C4CejMYP10JFPxUKLB_R5HK_BsHt-8duFYzXQcel0ZED1pp79w6y9e-8d_Fgua8lAZbjzEMMgHWc3jempCK2NbHjjlvUTv4J2Ks8Nhib5D-wz5nWuCkOHcvvJlFs_rObEGocbGv1pEi5MkHxVwVa1vXZdrL1yOiEU-VeYub" />
-              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end"><span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Wing 03</span><h3 className="font-display text-4xl text-surface mb-2">Spiritual Activities</h3><p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">Serving through conscious action, ritual devotion, and community meditation.</p></div>
-            </div>
+            {/* Product 1 */}
+            <Link to="/products" className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow block">
+              <img alt="Moksha Lakshmii Photo Frame" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="/lakshmi_frame.png" />
+              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end">
+                <span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Product 01</span>
+                <h3 className="font-display text-4xl text-surface mb-2">Moksha Lakshmii Photo Frame</h3>
+                <p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                  Sacred form of Sri Maha Lakshmi sketched from a sadhaka's vision. Confirmed to bring blessings to homes.
+                </p>
+              </div>
+            </Link>
+            {/* Product 2 */}
+            <Link to="/products" className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow block" style={{ transitionDelay: '200ms' }}>
+              <img alt="Aadi Lingam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="/shiva_lingam.png" />
+              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end">
+                <span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Product 02</span>
+                <h3 className="font-display text-4xl text-surface mb-2">Aadi Lingam</h3>
+                <p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                  Completely handmade Shiva Lingam designed based on Puranas. Rudrabhishekam performed before dispatch.
+                </p>
+              </div>
+            </Link>
+            {/* Product 3 */}
+            <Link to="/products" className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow block" style={{ transitionDelay: '400ms' }}>
+              <img alt="Parad Lingam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="/shiva_lingam.png" />
+              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end">
+                <span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Product 03</span>
+                <h3 className="font-display text-4xl text-surface mb-2">Parad Lingam</h3>
+                <p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                  Sacred Parad Lingam, handcrafted with ancient Vedic protocols. (Coming Soon)
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
