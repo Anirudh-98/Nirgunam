@@ -62,12 +62,11 @@ export default function About() {
           <p className="font-body text-white/80 max-w-lg text-base lg:text-lg font-light leading-relaxed mb-10">
             Manish Nirgunam is not a guru, teacher, or master. He sees himself simply as a reflecting spiritual being — connected to everything, completely free, and deeply humble.
           </p>
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 items-stretch sm:items-center">
-            <button className="bg-secondary text-white px-10 py-4 lg:py-5 rounded-button text-[12px] uppercase font-bold tracking-widest flex items-center justify-center gap-3 hover:bg-primary transition-all group w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+            <button className="h-[56px] px-8 rounded-[12px] text-[13px] uppercase font-bold tracking-widest text-white bg-[#5F6A46] hover:bg-[#4a5337] transition-colors flex items-center justify-center w-full sm:w-auto">
               Read The Journey
-              <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </button>
-            <button className="border border-secondary/40 text-secondary px-10 py-4 lg:py-5 rounded-button text-[12px] uppercase font-bold tracking-widest hover:bg-secondary/10 transition-all w-full sm:w-auto">
+            <button className="h-[56px] px-8 rounded-[12px] text-[13px] uppercase font-bold tracking-widest text-white border border-white/30 hover:bg-white/10 transition-colors flex items-center justify-center w-full sm:w-auto">
               Begin Your Path
             </button>
           </div>

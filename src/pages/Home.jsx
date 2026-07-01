@@ -42,7 +42,7 @@ export default function Home() {
     elements.forEach(el => observerRef.current.observe(el));
 
     // Check initial scroll (handled in Navbar now)
-    
+
     return () => {
       if (observerRef.current) {
         observerRef.current.disconnect();
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <picture>
             <source media="(max-width: 768px)" srcSet="/img1.webp" />
-            <img alt="Himalayan sunrise" className="w-full h-full object-cover" src="/heroimg.webp"/>
+            <img alt="Himalayan sunrise" className="w-full h-full object-cover" src="/heroimg.webp" />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
         </div>
@@ -71,40 +71,40 @@ export default function Home() {
             A sacred gathering for genuine seekers walking toward Jeevanmukti, Brahmanandam, and the deepest joy of real inner freedom.
           </p>
         </div>
-        
+
         {/* Bottom Elements: Buttons & Stats */}
         <div className="absolute bottom-12 left-[5%] right-[5%] flex flex-col w-[90%] z-10">
           {/* Hero Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 items-stretch sm:items-center mb-8 sm:mb-10 scroll-reveal">
             <button className="bg-surface text-primary px-10 py-4 lg:py-5 rounded-button text-[12px] uppercase font-bold tracking-widest flex items-center justify-center gap-3 hover:bg-surface-container-high transition-all group w-full sm:w-auto">
-              Begin Your Journey
+              EXPLORE THE PATH
               <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </button>
             <button className="bg-primary/20 border border-white/20 text-white px-10 py-4 lg:py-5 rounded-button text-[12px] uppercase font-bold tracking-widest backdrop-blur-md hover:bg-white/10 hover:border-white/40 transition-all w-full sm:w-auto">
-              Discover Bhairavam
+              GET IN TOUCH
             </button>
           </div>
 
           {/* Hero Stats */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-t border-white/20 pt-6 sm:pt-8 text-white gap-6 md:gap-0 scroll-reveal">
-          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-6 sm:gap-12 lg:gap-24 w-full md:w-auto">
-            <div>
-              <span className="block font-display text-3xl lg:text-4xl mb-1">3</span>
-              <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/50">Wings of Service</span>
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-6 sm:gap-12 lg:gap-24 w-full md:w-auto">
+              <div>
+                <span className="block font-display text-3xl lg:text-4xl mb-1">3</span>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/50">Wings of Service</span>
+              </div>
+              <div>
+                <span className="block font-display text-3xl lg:text-4xl mb-1">2026</span>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/50">Foundation Year</span>
+              </div>
+              <div className="col-span-2 sm:col-span-1">
+                <span className="block font-display text-3xl lg:text-4xl mb-1">∞</span>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/50">Open to All Seekers</span>
+              </div>
             </div>
-            <div>
-              <span className="block font-display text-3xl lg:text-4xl mb-1">2026</span>
-              <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/50">Foundation Year</span>
+            <div className="hidden md:flex flex-col items-center gap-2 opacity-50">
+              <span className="text-[9px] uppercase tracking-widest">Scroll to Explore</span>
+              <span className="material-symbols-outlined text-sm animate-bounce">expand_more</span>
             </div>
-            <div className="col-span-2 sm:col-span-1">
-              <span className="block font-display text-3xl lg:text-4xl mb-1">∞</span>
-              <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-white/50">Open to All Seekers</span>
-            </div>
-          </div>
-          <div className="hidden md:flex flex-col items-center gap-2 opacity-50">
-            <span className="text-[9px] uppercase tracking-widest">Scroll to Explore</span>
-            <span className="material-symbols-outlined text-sm animate-bounce">expand_more</span>
-          </div>
           </div>
         </div>
       </header>
@@ -115,7 +115,7 @@ export default function Home() {
           {/* Yatra */}
           <div className="scroll-reveal">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
-              <img alt="Yatra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPzKiDM1tzqRxpc6DNRpfwRy9Eww3lhGNV6fG0n4nKQTDxZJvLxQkmrJT7M2TtywQ6xaYevj2DDgLW0KZuEoi4aInh9h3HWvn9owpVGl7CLoo73MOxY9VQPJ2IcxI0mpmBA21qHk-wq2CNjY2CiHMz8tfzTjMbSFR5ZvF1kNf8cTvp9ycK4C7pfYXSKQDiNCq56va78_fskup1sGWwXQD0OXe1i-pGtnxZjsx_31ikXwc3JiGsRQEecEDlPcrVJPzB_lR7BLVSSMHr"/>
+              <img alt="Yatra" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPzKiDM1tzqRxpc6DNRpfwRy9Eww3lhGNV6fG0n4nKQTDxZJvLxQkmrJT7M2TtywQ6xaYevj2DDgLW0KZuEoi4aInh9h3HWvn9owpVGl7CLoo73MOxY9VQPJ2IcxI0mpmBA21qHk-wq2CNjY2CiHMz8tfzTjMbSFR5ZvF1kNf8cTvp9ycK4C7pfYXSKQDiNCq56va78_fskup1sGWwXQD0OXe1i-pGtnxZjsx_31ikXwc3JiGsRQEecEDlPcrVJPzB_lR7BLVSSMHr" />
               <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-xl p-3 rounded-full border border-white/30">
                 <span className="material-symbols-outlined text-white">temple_hindu</span>
               </div>
@@ -129,7 +129,7 @@ export default function Home() {
           {/* Bhairavam */}
           <div className="scroll-reveal" style={{ transitionDelay: '200ms' }}>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
-              <img alt="Bhairavam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQUqFI2yDsRb9Kb3IVOoWBqwVbFSmbRU7VEPr7l9r9_rz_MIRG6r_I_oYOd8vY4QQnI38yG0jF9-03smXFuV92VIcapH603Dpb1c6r3mSZn_QOwTN1hHhTyWbbIgDts78LubtH7rFeCByGD5EJyQSxmHhX1pTkUEovlt9HjgfudhOfFHUDonS9WBnNtmJRujaHic2FrwLseO83bmIEYRxv1TYLOIC8yyMQoSzu2lQC9--Wf5_rlmt6nwk9IpysSlBEteyGV2QjRWp"/>
+              <img alt="Bhairavam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNQUqFI2yDsRb9Kb3IVOoWBqwVbFSmbRU7VEPr7l9r9_rz_MIRG6r_I_oYOd8vY4QQnI38yG0jF9-03smXFuV92VIcapH603Dpb1c6r3mSZn_QOwTN1hHhTyWbbIgDts78LubtH7rFeCByGD5EJyQSxmHhX1pTkUEovlt9HjgfudhOfFHUDonS9WBnNtmJRujaHic2FrwLseO83bmIEYRxv1TYLOIC8yyMQoSzu2lQC9--Wf5_rlmt6nwk9IpysSlBEteyGV2QjRWp" />
               <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-xl p-3 rounded-full border border-white/30">
                 <span className="material-symbols-outlined text-white">self_improvement</span>
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
           {/* Activities */}
           <div className="scroll-reveal" style={{ transitionDelay: '400ms' }}>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
-              <img alt="Activities" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYe2qJVkBNRTu32aojzlEVc7p5fx3nNgQDr_RAY0JRepGyeXTuViUvp3SC4VCJ27dpUvqhzVkOr10-xZi3fAJK-m45v9P789XqNlwZH5iIkhAQWJSUTuDm-8zDWc_Q3kiqWFnn3lxetiPVYh6WaN5yukQA2ZTdM2sRNA4KNzQhvto6nGwwdU5Eded21jdvzpi13bxJb166ycQQNkdrwR3oQfoh1XwSr4M_0a24IjNjVvf3AgBY4qf4wwoZCanPHt-fygj5capt7iK"/>
+              <img alt="Activities" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYe2qJVkBNRTu32aojzlEVc7p5fx3nNgQDr_RAY0JRepGyeXTuViUvp3SC4VCJ27dpUvqhzVkOr10-xZi3fAJK-m45v9P789XqNlwZH5iIkhAQWJSUTuDm-8zDWc_Q3kiqWFnn3lxetiPVYh6WaN5yukQA2ZTdM2sRNA4KNzQhvto6nGwwdU5Eded21jdvzpi13bxJb166ycQQNkdrwR3oQfoh1XwSr4M_0a24IjNjVvf3AgBY4qf4wwoZCanPHt-fygj5capt7iK" />
               <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-xl p-3 rounded-full border border-white/30">
                 <span className="material-symbols-outlined text-white">volunteer_activism</span>
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center gap-24 max-w-[1400px] mx-auto w-full">
           <div className="w-full lg:w-1/2 scroll-reveal">
             <div className="relative rounded-image overflow-hidden aspect-[4/5] minimal-shadow max-h-[700px] mx-auto">
-              <img alt="Manish Nirgunam" className="w-full h-full object-cover" src="/aboutimg.webp"/>
+              <img alt="Manish Nirgunam" className="w-full h-full object-cover" src="/aboutimg.webp" />
             </div>
           </div>
           <div className="w-full lg:w-1/2 scroll-reveal" style={{ transitionDelay: '200ms' }}>
@@ -242,15 +242,15 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow">
-              <img alt="Wing 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPZwojtkfZWLWws9MAQT4P_a873e00LpdIGRMsxOJ8wflAjZQfhXspPIz26saSkAC8MOltQPElXX7WsZWrUa1Ptf-jBo18refmep2KOBwHxF1uqDiIjHN9ECo364vsmYYM-BetOfpQtPxkPZMkGYGZWKX6kBd7bN9mJyRQPMiTtEqc_P91cYkJxn_kvAF8HENIE8ZpRsigF4GJ50sriYUJBua-xczCvZi2GtKJjZPpkTA0wBfKQ9SWB2cJJNNNblafroLRu336kdU"/>
+              <img alt="Wing 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPZwojtkfZWLWws9MAQT4P_a873e00LpdIGRMsxOJ8wflAjZQfhXspPIz26saSkAC8MOltQPElXX7WsZWrUa1Ptf-jBo18refmep2KOBwHxF1uqDiIjHN9ECo364vsmYYM-BetOfpQtPxkPZMkGYGZWKX6kBd7bN9mJyRQPMiTtEqc_P91cYkJxn_kvAF8HENIE8ZpRsigF4GJ50sriYUJBua-xczCvZi2GtKJjZPpkTA0wBfKQ9SWB2cJJNNNblafroLRu336kdU" />
               <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end"><span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Wing 01</span><h3 className="font-display text-4xl text-surface mb-2">Yatra</h3><p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">Sacred pilgrimages and transformative journeys to the heart of the Himalayas.</p></div>
             </div>
             <div className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow" style={{ transitionDelay: '200ms' }}>
-              <img alt="Wing 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw69PPqBOaZ03t2aB1fJNo-kCk06l1DMYsbwet1VWwPjEc9m2Vr08jB236_jAm4AOaV70WxfdmqVw7-07sNUGbOTsf3s30IpOZTxlEuF12_Aj3Z716kX6R366AiNzmxsdViGsXeE7rpuJgCShmO9JTlX4ddMEZJVAs7KNvRakYfRjmPhbiwfEeoOoQj7vHLLGF0x7KNk1X8K1-uFvhc2V9j-drecIvllgs533pkgCNVWWxv5G6g3WTnpJ9NhrgY98xD0IE5Sna5SLL"/>
+              <img alt="Wing 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw69PPqBOaZ03t2aB1fJNo-kCk06l1DMYsbwet1VWwPjEc9m2Vr08jB236_jAm4AOaV70WxfdmqVw7-07sNUGbOTsf3s30IpOZTxlEuF12_Aj3Z716kX6R366AiNzmxsdViGsXeE7rpuJgCShmO9JTlX4ddMEZJVAs7KNvRakYfRjmPhbiwfEeoOoQj7vHLLGF0x7KNk1X8K1-uFvhc2V9j-drecIvllgs533pkgCNVWWxv5G6g3WTnpJ9NhrgY98xD0IE5Sna5SLL" />
               <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end"><span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Wing 02</span><h3 className="font-display text-4xl text-surface mb-2">Bhairavam</h3><p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">The path beyond description. Ancient wisdom refined for the modern conscious mind.</p></div>
             </div>
             <div className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow" style={{ transitionDelay: '400ms' }}>
-              <img alt="Wing 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nMkGHy1eUFkJWPrvjBW6fH4yHw4IpClhTC8bKCtaNK8sTOJHanH_4l0A09y1ikBB4n2h6CpAhrqJTXGdCqid3TJlxRya5sEAzDID1C4CejMYP10JFPxUKLB_R5HK_BsHt-8duFYzXQcel0ZED1pp79w6y9e-8d_Fgua8lAZbjzEMMgHWc3jempCK2NbHjjlvUTv4J2Ks8Nhib5D-wz5nWuCkOHcvvJlFs_rObEGocbGv1pEi5MkHxVwVa1vXZdrL1yOiEU-VeYub"/>
+              <img alt="Wing 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9nMkGHy1eUFkJWPrvjBW6fH4yHw4IpClhTC8bKCtaNK8sTOJHanH_4l0A09y1ikBB4n2h6CpAhrqJTXGdCqid3TJlxRya5sEAzDID1C4CejMYP10JFPxUKLB_R5HK_BsHt-8duFYzXQcel0ZED1pp79w6y9e-8d_Fgua8lAZbjzEMMgHWc3jempCK2NbHjjlvUTv4J2Ks8Nhib5D-wz5nWuCkOHcvvJlFs_rObEGocbGv1pEi5MkHxVwVa1vXZdrL1yOiEU-VeYub" />
               <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end"><span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Wing 03</span><h3 className="font-display text-4xl text-surface mb-2">Spiritual Activities</h3><p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">Serving through conscious action, ritual devotion, and community meditation.</p></div>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default function Home() {
             {/* Retreat Card 1 */}
             <div className="group scroll-reveal">
               <div className="rounded-image overflow-hidden mb-8 aspect-[16/10] minimal-shadow">
-                <img alt="Rishikesh" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlQ1ToIRuEsLGnG8N4UJykNgaui4-Ve1MoJ2CpicmzuXOHKl22N9Vrjj56vqHe9o0_uD0kkXlD4U7c9WVTcYSDZBgWGYPc3GNZU21bGBLZ5gCEIN1XgnowAt1MuG_JJnL8Zky-KNDcLLKWAL6n1EPbEccEMXz8XvAlZQTwlfwA2-7wFpNNjpCARw6BT7C7uQFQvUUGU1_mt3KDVJesDZsI2xPTDZes4e9J0H4auzhDdXehgiWXgHEwu3ZpxkhT5ruJyWDQ83fY7a3M"/>
+                <img alt="Rishikesh" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlQ1ToIRuEsLGnG8N4UJykNgaui4-Ve1MoJ2CpicmzuXOHKl22N9Vrjj56vqHe9o0_uD0kkXlD4U7c9WVTcYSDZBgWGYPc3GNZU21bGBLZ5gCEIN1XgnowAt1MuG_JJnL8Zky-KNDcLLKWAL6n1EPbEccEMXz8XvAlZQTwlfwA2-7wFpNNjpCARw6BT7C7uQFQvUUGU1_mt3KDVJesDZsI2xPTDZes4e9J0H4auzhDdXehgiWXgHEwu3ZpxkhT5ruJyWDQ83fY7a3M" />
               </div>
               <h4 className="font-display text-2xl mb-2 text-primary-container">Nirgunam Retreat</h4>
               <p className="text-sm text-on-surface-variant mb-6 font-light">Rishikesh</p>
@@ -288,7 +288,7 @@ export default function Home() {
             {/* Retreat Card 2 */}
             <div className="group scroll-reveal" style={{ transitionDelay: '100ms' }}>
               <div className="rounded-image overflow-hidden mb-8 aspect-[16/10] minimal-shadow">
-                <img alt="Bengaluru" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg4MEcPfpbWVp3qnpKFjdSudl0_rfJGyP1npAPuySqJ7UESDBTHVqb0_lOX_C5xisbCvraPaR_JttIkdoKGos8m2fXDGfP2H-mnu5Go9i8u58yMUEJtXhjgMneWmYDC1G2B3tsK-vstYSamuDxv1Lz2zZnAscZqIm538E4DC_lS0o4o0WNhLkqA2gerfLhIkniX9Vz4H-qWubDL7aUT7usr50i4iU-Eh6dvc7tG7RtnYOpthZDWXIeXAEbZK7Z8ycRFyLFWsg3EJOQ"/>
+                <img alt="Bengaluru" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg4MEcPfpbWVp3qnpKFjdSudl0_rfJGyP1npAPuySqJ7UESDBTHVqb0_lOX_C5xisbCvraPaR_JttIkdoKGos8m2fXDGfP2H-mnu5Go9i8u58yMUEJtXhjgMneWmYDC1G2B3tsK-vstYSamuDxv1Lz2zZnAscZqIm538E4DC_lS0o4o0WNhLkqA2gerfLhIkniX9Vz4H-qWubDL7aUT7usr50i4iU-Eh6dvc7tG7RtnYOpthZDWXIeXAEbZK7Z8ycRFyLFWsg3EJOQ" />
               </div>
               <h4 className="font-display text-2xl mb-2 text-primary-container">Bhairavam Satsang</h4>
               <p className="text-sm text-on-surface-variant mb-6 font-light">Bengaluru</p>
@@ -303,7 +303,7 @@ export default function Home() {
             {/* Retreat Card 3 */}
             <div className="group scroll-reveal" style={{ transitionDelay: '200ms' }}>
               <div className="rounded-image overflow-hidden mb-8 aspect-[16/10] minimal-shadow">
-                <img alt="Tiruvannamalai" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARGdunPphWmzyLTzyFud7UWnmF2DGRgiM1iHEcz6Pke_zPUHSw09JwWhvrqZALg-2iGyAsHgLRwhskmk9AIFJAkz-VGMIURGFdys_jggouDOaLI8v9eM8Cz4IAtl9rMOKxa3-ljo4D3RZ9h9szYEcf3ReBq-qEBR9IlWB6efMNMqLvbM6lGu-9x1MHuHcqxgJ61a__R5RUG0eagc8ETh1tly4cqemMfQz_aC3efS8YKG-C3wXVYXvK2pO8uIK0qS011G3hCwNAw19v"/>
+                <img alt="Tiruvannamalai" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARGdunPphWmzyLTzyFud7UWnmF2DGRgiM1iHEcz6Pke_zPUHSw09JwWhvrqZALg-2iGyAsHgLRwhskmk9AIFJAkz-VGMIURGFdys_jggouDOaLI8v9eM8Cz4IAtl9rMOKxa3-ljo4D3RZ9h9szYEcf3ReBq-qEBR9IlWB6efMNMqLvbM6lGu-9x1MHuHcqxgJ61a__R5RUG0eagc8ETh1tly4cqemMfQz_aC3efS8YKG-C3wXVYXvK2pO8uIK0qS011G3hCwNAw19v" />
               </div>
               <h4 className="font-display text-2xl mb-2 text-primary-container">Shiva Temple Yatra</h4>
               <p className="text-sm text-on-surface-variant mb-6 font-light">Tiruvannamalai</p>
@@ -318,7 +318,7 @@ export default function Home() {
             {/* Retreat Card 4 */}
             <div className="group scroll-reveal" style={{ transitionDelay: '300ms' }}>
               <div className="rounded-image overflow-hidden mb-8 aspect-[16/10] minimal-shadow">
-                <img alt="Varanasi" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaCjknXk14Ygy0xGzWaAzm3-oxAIQAW7Jw9t6SCx8gBrXPV4WJDABc2dBfKKHS6FK8JaPVDyY5JBtEC7Lk7U-NUM-jPBgl5zoFK1vHhUHZtHC3oJR7Za_SrGx_G4_2rM6t7qLmuAQpNh5s5Wt3szhUdy5OfUt6oaqyhOqI1z5IX1W3oGbz6-NyXcdd4l8gS9p-AYviTcrr9gdrjRfJBENFkgWyqqvx8Cm2QLswUCo-Cl_b9tv2nEesasG1HRHMBKhLtJ-vJQIS5z6o"/>
+                <img alt="Varanasi" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaCjknXk14Ygy0xGzWaAzm3-oxAIQAW7Jw9t6SCx8gBrXPV4WJDABc2dBfKKHS6FK8JaPVDyY5JBtEC7Lk7U-NUM-jPBgl5zoFK1vHhUHZtHC3oJR7Za_SrGx_G4_2rM6t7qLmuAQpNh5s5Wt3szhUdy5OfUt6oaqyhOqI1z5IX1W3oGbz6-NyXcdd4l8gS9p-AYviTcrr9gdrjRfJBENFkgWyqqvx8Cm2QLswUCo-Cl_b9tv2nEesasG1HRHMBKhLtJ-vJQIS5z6o" />
               </div>
               <h4 className="font-display text-2xl mb-2 text-primary-container">Seva &amp; Satsang</h4>
               <p className="text-sm text-on-surface-variant mb-6 font-light">Varanasi</p>
@@ -355,7 +355,7 @@ export default function Home() {
             {/* Testimonial 1 */}
             <div className="flex-shrink-0 w-[85vw] md:w-[600px] snap-center bg-surface p-10 rounded-card minimal-shadow flex flex-col md:flex-row items-center gap-8">
               <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-surface-container-low">
-                <img alt="Kavya S." className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJca9I5iJmYt3TxuoNlo6KFcEdM6DFP3vgNTVpy6S4i3LMbGx-gBr1noPxmwf07cP6NUe4StZYDQbi0kTzTsfL6kQhCbikDlvxbJyWZAdXSxe4svu3ovgWmpHLMw4vqgFU0irkv17Bl0wX5RwdjjcLyGZNKNSmB3HUthu-zj9hGgNWJ1TJF3wzPwVj7bMNvoeJN6k183Oy3hgaz0gC2uTOmoDcq9rOJnvJ42RIa0yi3NnYL4XKmjeU6_JL58pzwMCi5ZLzEo6EjI4h"/>
+                <img alt="Kavya S." className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJca9I5iJmYt3TxuoNlo6KFcEdM6DFP3vgNTVpy6S4i3LMbGx-gBr1noPxmwf07cP6NUe4StZYDQbi0kTzTsfL6kQhCbikDlvxbJyWZAdXSxe4svu3ovgWmpHLMw4vqgFU0irkv17Bl0wX5RwdjjcLyGZNKNSmB3HUthu-zj9hGgNWJ1TJF3wzPwVj7bMNvoeJN6k183Oy3hgaz0gC2uTOmoDcq9rOJnvJ42RIa0yi3NnYL4XKmjeU6_JL58pzwMCi5ZLzEo6EjI4h" />
               </div>
               <div className="flex-grow">
                 <span className="material-symbols-outlined text-4xl text-secondary/30 mb-4 inline-block" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
@@ -369,7 +369,7 @@ export default function Home() {
             {/* Testimonial 2 */}
             <div className="flex-shrink-0 w-[85vw] md:w-[600px] snap-center bg-surface p-10 rounded-card minimal-shadow flex flex-col md:flex-row items-center gap-8">
               <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-surface-container-low">
-                <img alt="Arjun V." className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhgsXXTN42OR1qh8C5V3YlbPbTkelPj5hzG-65Yw0tgmzpyItBQOU5c5dIRzlXP9mJjn9bIBZ7UiEe1kyHTfMDcpT4LNtOGXvDCNOf_KTRVXcvlCYQ6kffQhLasz43UiCTRnXRMKzh5YhICobeQ_fvMvK8MQteZoPttlBs2DXigjnKiKyK0X4a_ZrWQi00P_nK8AgFJpaEus2o9FgM2jiwDIupV4mX1uHPFjfN9JGwy-0BR-Vi8asPtWadx07CzTicSr_lnAmGX8Fi"/>
+                <img alt="Arjun V." className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhgsXXTN42OR1qh8C5V3YlbPbTkelPj5hzG-65Yw0tgmzpyItBQOU5c5dIRzlXP9mJjn9bIBZ7UiEe1kyHTfMDcpT4LNtOGXvDCNOf_KTRVXcvlCYQ6kffQhLasz43UiCTRnXRMKzh5YhICobeQ_fvMvK8MQteZoPttlBs2DXigjnKiKyK0X4a_ZrWQi00P_nK8AgFJpaEus2o9FgM2jiwDIupV4mX1uHPFjfN9JGwy-0BR-Vi8asPtWadx07CzTicSr_lnAmGX8Fi" />
               </div>
               <div className="flex-grow">
                 <span className="material-symbols-outlined text-4xl text-secondary/30 mb-4 inline-block" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
@@ -383,7 +383,7 @@ export default function Home() {
             {/* Testimonial 3 */}
             <div className="flex-shrink-0 w-[85vw] md:w-[600px] snap-center bg-surface p-10 rounded-card minimal-shadow flex flex-col md:flex-row items-center gap-8">
               <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-surface-container-low">
-                <img alt="Sarah L." className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFOVG69z_3LM2ZCWTThhbzFGdqPZQKqjE1LjJuHptKUkQkxOSdv50p1P5LC5nvGAsukhxEC1cZ2L0gSGthL9wfdbCEqXoXPJVfNKX1msjX4lCpQlrtUdMYXMBlWzx8oBOZ5uqxaFPPg_BeE7zcDKTDcBqNIMns3WzvDJl_810vzOMmYfMYDE8b2Dg605c1j7me7-h2bE5CiuJFjVLZm5BIkNhzzC6NpMdZiEnutbIeIjhqC_h7AiY5eeTlhGPABm66FB76pV-KV51i"/>
+                <img alt="Sarah L." className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFOVG69z_3LM2ZCWTThhbzFGdqPZQKqjE1LjJuHptKUkQkxOSdv50p1P5LC5nvGAsukhxEC1cZ2L0gSGthL9wfdbCEqXoXPJVfNKX1msjX4lCpQlrtUdMYXMBlWzx8oBOZ5uqxaFPPg_BeE7zcDKTDcBqNIMns3WzvDJl_810vzOMmYfMYDE8b2Dg605c1j7me7-h2bE5CiuJFjVLZm5BIkNhzzC6NpMdZiEnutbIeIjhqC_h7AiY5eeTlhGPABm66FB76pV-KV51i" />
               </div>
               <div className="flex-grow">
                 <span className="material-symbols-outlined text-4xl text-secondary/30 mb-4 inline-block" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
@@ -401,11 +401,11 @@ export default function Home() {
       {/* Final Banner */}
       <section className="relative min-h-screen flex flex-col justify-center w-full overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img alt="Every Journey Begins" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAhKCdBVxGXCUFQvXwAakJ1CcQox2Cf6Hm3Wqml10mTCjDXVWs_JTjcoYXhz6ZE6tvC9bPqCJHK7uJx0-mF0LtTJptKMoqnnJv1BHAKUFlZh3Wuh6m39lq8IlDoQMeK7ne2nfzTRqmxY7fvwYNN2byReXcwiHw4HI_DSgkCVDGk3z_1ptOE7KK83KqeFHjOT_dWxUIcdh7taFnBIRtDgPgrZDgFI0zzFjLwIh5K8FJO1QMUaan7-0ABfUfnNam_FJvkgyovNgsghUG"/>
+          <img alt="Every Journey Begins" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAhKCdBVxGXCUFQvXwAakJ1CcQox2Cf6Hm3Wqml10mTCjDXVWs_JTjcoYXhz6ZE6tvC9bPqCJHK7uJx0-mF0LtTJptKMoqnnJv1BHAKUFlZh3Wuh6m39lq8IlDoQMeK7ne2nfzTRqmxY7fvwYNN2byReXcwiHw4HI_DSgkCVDGk3z_1ptOE7KK83KqeFHjOT_dWxUIcdh7taFnBIRtDgPgrZDgFI0zzFjLwIh5K8FJO1QMUaan7-0ABfUfnNam_FJvkgyovNgsghUG" />
           <div className="absolute inset-0 bg-primary/40"></div>
         </div>
         <div className="relative z-10 text-center px-[5%] scroll-reveal">
-          <h2 className="font-display text-5xl md:text-7xl lg:text-[88px] leading-[1.05] text-surface mb-8">Every Journey Begins<br className="hidden md:block"/>With A Single Step</h2>
+          <h2 className="font-display text-5xl md:text-7xl lg:text-[88px] leading-[1.05] text-surface mb-8">Every Journey Begins<br className="hidden md:block" />With A Single Step</h2>
           <p className="font-body text-surface/80 text-xl lg:text-2xl font-light mb-16 max-w-3xl mx-auto">Step into a path of wisdom, meditation, and inner awakening.</p>
           <button className="bg-surface text-primary-container px-14 py-6 rounded-button text-[12px] uppercase font-bold tracking-[0.2em] hover:bg-secondary hover:text-surface transition-all transform hover:scale-105 flex items-center gap-4 mx-auto">
             Begin Your Journey

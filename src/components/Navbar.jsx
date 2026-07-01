@@ -41,9 +41,10 @@ export default function Navbar() {
           <Link to="/about" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/about' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>About</Link>
           <Link to="/journey" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/journey' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>Journey</Link>
           <Link to="/bhairavam" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/bhairavam' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>Bhairavam</Link>
-          <a href="#" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80'}`}>Yatra</a>
-          <a href="#" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80'}`}>Products</a>
-          <a href="#" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80'}`}>Spiritual Activities</a>
+          <Link to="/yatra" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/yatra' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>Yatra</Link>
+          <Link to="/products" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/products' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>Products</Link>
+          <Link to="/spiritual-activities" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/spiritual-activities' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>Spiritual Activities</Link>
+          <Link to="/registration" className={`text-[11px] font-semibold uppercase tracking-widest border-b-2 transition-all duration-500 ${location.pathname === '/registration' ? (scrolled ? 'border-secondary text-on-surface pb-1' : 'border-white text-white pb-1') : (scrolled ? 'border-transparent text-[#4e4541]' : 'border-transparent text-white/80')}`}>Registration</Link>
         </div>
         <div className="flex items-center gap-6">
           <button className={`px-8 py-3 rounded-button text-[11px] uppercase font-bold tracking-widest transition-all duration-500 hidden xl:block ${scrolled ? 'text-on-surface border border-outline/20 bg-surface-container-high/50' : 'bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white hover:text-primary'}`}>
@@ -68,9 +69,10 @@ export default function Navbar() {
           <Link to="/about" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link to="/journey" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Journey</Link>
           <Link to="/bhairavam" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Bhairavam</Link>
-          <a href="#" className="text-xl font-display text-primary-container">Yatra</a>
-          <a href="#" className="text-xl font-display text-primary-container">Products</a>
-          <a href="#" className="text-xl font-display text-primary-container">Spiritual Activities</a>
+          <Link to="/yatra" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Yatra</Link>
+          <Link to="/products" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Products</Link>
+          <Link to="/spiritual-activities" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Spiritual Activities</Link>
+          <Link to="/registration" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Registration</Link>
           <button className="bg-primary-container text-white px-8 py-3 rounded-button text-xs uppercase font-bold mt-4">Join Nirgunam</button>
         </div>
       )}

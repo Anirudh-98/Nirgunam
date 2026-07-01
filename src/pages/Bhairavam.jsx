@@ -50,10 +50,10 @@ export default function Bhairavam() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="h-[56px] px-8 rounded-[12px] text-[13px] uppercase font-bold tracking-widest text-white bg-[#5D6845] hover:bg-[#4a5337] transition-colors flex items-center justify-center">
+              <button className="h-[56px] px-8 rounded-[12px] text-[13px] uppercase font-bold tracking-widest text-white bg-[#5F6A46] hover:bg-[#4a5337] transition-colors flex items-center justify-center w-full sm:w-auto">
                 Explore Bhairavam
               </button>
-              <button className="h-[56px] px-8 rounded-[12px] text-[13px] uppercase font-bold tracking-widest text-[#7A5736] border border-[#7A5736]/30 hover:bg-[#7A5736]/5 transition-colors flex items-center justify-center">
+              <button className="h-[56px] px-8 rounded-[12px] text-[13px] uppercase font-bold tracking-widest text-white border border-white/30 hover:bg-white/10 transition-colors flex items-center justify-center w-full sm:w-auto">
                 Join a Satsang
               </button>
             </div>
