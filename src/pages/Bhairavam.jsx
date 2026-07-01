@@ -22,26 +22,26 @@ export default function Bhairavam() {
             <source media="(max-width: 768px)" srcSet="/img4.webp" />
             <img 
               alt="Bhairavam Meditation" 
-              className="w-full h-full object-cover object-right lg:object-center mix-blend-multiply opacity-90" 
+              className="w-full h-full object-cover object-right lg:object-center" 
               src="/img4.webp"
               onError={(e) => { e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuC9nMkGHy1eUFkJWPrvjBW6fH4yHw4IpClhTC8bKCtaNK8sTOJHanH_4l0A09y1ikBB4n2h6CpAhrqJTXGdCqid3TJlxRya5sEAzDID1C4CejMYP10JFPxUKLB_R5HK_BsHt-8duFYzXQcel0ZED1pp79w6y9e-8d_Fgua8lAZbjzEMMgHWc3jempCK2NbHjjlvUTv4J2Ks8Nhib5D-wz5nWuCkOHcvvJlFs_rObEGocbGv1pEi5MkHxVwVa1vXZdrL1yOiEU-VeYub" }}
             />
           </picture>
-          {/* Gradient to blend image with ivory background on the left */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#F7F2EB] via-[#F7F2EB]/95 to-transparent w-full md:w-2/3 lg:w-[55%]"></div>
+          {/* Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
         </div>
         
         {/* Left Content */}
         <div className="relative z-10 flex flex-col justify-center px-[5%] lg:px-[8%] w-full h-full pt-[90px]">
           <div className="w-full max-w-[520px]">
-            <span className="text-[13px] uppercase tracking-[0.2em] text-[#C89A58] font-semibold mb-6 block">The Essence</span>
-            <h1 className="font-display font-medium text-[72px] leading-[1] text-[#2C2119] tracking-[-0.03em] mb-4">
+            <span className="text-[13px] uppercase tracking-[0.2em] text-white/80 font-semibold mb-6 block">The Essence</span>
+            <h1 className="font-display font-medium text-[72px] leading-[1] text-white tracking-[-0.03em] mb-4">
               Bhairavam
             </h1>
-            <h2 className="font-display text-[32px] md:text-[40px] italic font-light text-[#776D64] mb-8 leading-tight">
+            <h2 className="font-display text-[32px] md:text-[40px] italic font-light text-white/90 mb-8 leading-tight">
               The truth beyond description.
             </h2>
-            <div className="font-body text-[#776D64] text-[18px] leading-[1.9] font-light space-y-4 mb-10">
+            <div className="font-body text-white/80 text-[18px] leading-[1.9] font-light space-y-4 mb-10">
               <p>
                 Bhairavam is not a belief, philosophy, or ritual. It is the raw presence behind all existence — beyond identity, thought, and the illusion of separation.
               </p>

@@ -57,6 +57,13 @@ export default function Navbar() {
 
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-6" onClick={() => setMobileMenuOpen(false)}>
+          <button 
+            onClick={() => setMobileMenuOpen(false)} 
+            className="absolute top-8 right-[5%] text-[#1c1c17] hover:opacity-75 transition-opacity"
+            aria-label="Close menu"
+          >
+            <span className="material-symbols-outlined text-2xl">close</span>
+          </button>
           <Link to="/" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           <Link to="/about" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link to="/journey" className="text-xl font-display text-primary-container" onClick={() => setMobileMenuOpen(false)}>Journey</Link>

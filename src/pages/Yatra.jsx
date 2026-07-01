@@ -48,26 +48,26 @@ export default function Yatra() {
             <source media="(max-width: 768px)" srcSet="/img2.webp" />
             <img 
               alt="Yatra Meditation" 
-              className="w-full h-full object-cover object-center mix-blend-multiply opacity-90" 
+              className="w-full h-full object-cover object-center" 
               src="/img2.webp"
               onError={(e) => { e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuDQq0s45XzZ-Qz7l9q3R475_H6g47t8P6Z_9239WfX2062x28x_8992_803fQx3446-f_904xQ_5H1Y96939b4bX9QW5Z-5_VzX6691461993444_2hG_y9-7_R7-0243_z28V1z-2y9x985qQ6_Z-4Q58bX5716W4-x_2209q93Wq990xZ-y-V3Qy7Z3_0b2z6-23V46_8-6fH-Q91_qXz-189_01b22XfH-xX2q-Q1Z-W35x4QW44Q" }}
             />
           </picture>
-          {/* Left Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#F7F2EB] via-[#F7F2EB]/95 to-transparent w-full md:w-2/3 lg:w-[55%]"></div>
+          {/* Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
         </div>
         
         {/* Left Content */}
         <div className="relative z-10 flex flex-col justify-center px-[5%] lg:px-[8%] w-full h-full pt-[90px]">
           <div className="w-full max-w-[520px]">
-            <span className="text-[13px] uppercase tracking-[0.2em] text-[#C89A58] font-semibold mb-6 block">The Path</span>
-            <h1 className="font-display font-medium text-[72px] leading-[1] text-[#2C2119] tracking-[-0.03em] mb-4">
+            <span className="text-[13px] uppercase tracking-[0.2em] text-white/80 font-semibold mb-6 block">The Path</span>
+            <h1 className="font-display font-medium text-[72px] leading-[1] text-white tracking-[-0.03em] mb-4">
               Yatra
             </h1>
-            <h2 className="font-display text-[32px] md:text-[40px] italic font-light text-[#776D64] mb-8 leading-tight">
+            <h2 className="font-display text-[32px] md:text-[40px] italic font-light text-white/90 mb-8 leading-tight">
               Sacred Walkouts.
             </h2>
-            <div className="font-body text-[#776D64] text-[18px] leading-[1.9] font-light space-y-4 mb-10">
+            <div className="font-body text-white/80 text-[18px] leading-[1.9] font-light space-y-4 mb-10">
               <p>Unique pilgrimage plans with affordable pricing, ancient scripture knowledge, and special care for every seeker.</p>
               <p>Yatra is not tourism. It is a sacred travel outward that mirrors your spiritual transformation inward, guided by profound wisdom.</p>
             </div>

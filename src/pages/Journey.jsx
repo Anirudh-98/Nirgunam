@@ -73,18 +73,18 @@ export default function Journey() {
               src="/img3.webp"
             />
           </picture>
-          {/* Gradient to blend image with ivory background on the left */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#F7F2EB] via-[#F7F2EB]/90 to-transparent w-full md:w-2/3 lg:w-1/2"></div>
+          {/* Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
         </div>
         
         {/* Left Content */}
         <div className="relative z-10 flex flex-col justify-center px-[5%] w-full h-full pt-[90px]">
           <div className="w-full max-w-[520px]">
-            <span className="text-[13px] uppercase tracking-[0.2em] text-[#C89A58] font-semibold mb-6 block">The Path</span>
-            <h1 className="font-display font-medium text-[56px] md:text-[72px] leading-[1] text-[#7A5736] tracking-[-0.03em] mb-8">
+            <span className="text-[13px] uppercase tracking-[0.2em] text-white/80 font-semibold mb-6 block">The Path</span>
+            <h1 className="font-display font-medium text-[56px] md:text-[72px] leading-[1] text-white tracking-[-0.03em] mb-8">
               Spiritual Journey
             </h1>
-            <p className="font-body text-[#776D64] text-[18px] leading-[1.9] font-light">
+            <p className="font-body text-white/80 text-[18px] leading-[1.9] font-light">
               An unfolding of inner transformation, sacred encounters, and awakening through direct experiences. Every step on this path is an invitation to go deeper, beyond the known, into the truth of who you are.
             </p>
           </div>

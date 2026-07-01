@@ -61,7 +61,7 @@ export default function Home() {
             <source media="(max-width: 768px)" srcSet="/img1.webp" />
             <img alt="Himalayan sunrise" className="w-full h-full object-cover" src="/heroimg.webp"/>
           </picture>
-          <div className="absolute inset-0 hero-gradient"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
         </div>
         <div className="relative z-10 max-w-4xl scroll-reveal mt-10 md:mt-0">
           <span className="text-[10px] md:text-[12px] uppercase tracking-[0.4em] text-white/80 font-bold mb-4 md:mb-6 block">Sri Mata Group</span>

@@ -48,18 +48,18 @@ export default function About() {
         <div className="absolute inset-0 z-0">
           <picture>
             <source media="(max-width: 768px)" srcSet="/img2.webp" />
-            <img alt="Manish Meditating" className="w-full h-full object-cover object-right lg:object-center mix-blend-multiply opacity-90" src="/img2.webp" />
+            <img alt="Manish Meditating" className="w-full h-full object-cover object-right lg:object-center" src="/img2.webp" />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#e6dfd1] via-[#e6dfd1]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
         </div>
 
         <div className="relative z-10 max-w-2xl scroll-reveal mt-16 md:mt-0">
-          <span className="text-[10px] md:text-[12px] uppercase tracking-[0.4em] text-secondary font-bold mb-4 md:mb-6 block">About The Founder</span>
-          <h1 className="font-display text-6xl md:text-7xl lg:text-[88px] leading-[0.95] text-primary-container mb-6">Meet<br/>Manish Nirgunam</h1>
-          <h2 className="font-display text-2xl md:text-3xl font-light text-primary-container mb-6 leading-snug">
+          <span className="text-[10px] md:text-[12px] uppercase tracking-[0.4em] text-white/80 font-bold mb-4 md:mb-6 block">About The Founder</span>
+          <h1 className="font-display text-6xl md:text-7xl lg:text-[88px] leading-[0.95] text-white mb-6">Meet<br/>Manish Nirgunam</h1>
+          <h2 className="font-display text-2xl md:text-3xl font-light text-white/90 mb-6 leading-snug">
             A reflecting spiritual being connected to everything, completely free, deeply humble.
           </h2>
-          <p className="font-body text-primary-container/80 max-w-lg text-base lg:text-lg font-light leading-relaxed mb-10">
+          <p className="font-body text-white/80 max-w-lg text-base lg:text-lg font-light leading-relaxed mb-10">
             Manish Nirgunam is not a guru, teacher, or master. He sees himself simply as a reflecting spiritual being — connected to everything, completely free, and deeply humble.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 items-stretch sm:items-center">
