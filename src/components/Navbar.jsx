@@ -57,7 +57,7 @@ export default function Navbar() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-6" onClick={() => setMobileMenuOpen(false)}>
+        <div className="fixed inset-0 z-[60] bg-surface flex flex-col items-center justify-center gap-6" onClick={() => setMobileMenuOpen(false)}>
           <button 
             onClick={() => setMobileMenuOpen(false)} 
             className="absolute top-8 right-[5%] text-[#1c1c17] hover:opacity-75 transition-opacity"

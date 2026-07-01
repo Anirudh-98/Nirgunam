@@ -76,7 +76,7 @@ export default function Home() {
         <div className="absolute bottom-12 left-[5%] right-[5%] flex flex-col w-[90%] z-10">
           {/* Hero Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 items-stretch sm:items-center mb-8 sm:mb-10 scroll-reveal">
-            <button className="bg-surface text-primary px-10 py-4 lg:py-5 rounded-button text-[12px] uppercase font-bold tracking-widest flex items-center justify-center gap-3 hover:bg-surface-container-high transition-all group w-full sm:w-auto">
+            <button className="bg-[#FF9933] text-white px-10 py-4 lg:py-5 rounded-button text-[12px] uppercase font-bold tracking-widest flex items-center justify-center gap-3 hover:bg-[#e68a00] transition-all group w-full sm:w-auto">
               EXPLORE THE PATH
               <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </button>
