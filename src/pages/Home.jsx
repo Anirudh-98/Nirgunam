@@ -112,7 +112,7 @@ export default function Home() {
       {/* Three Pathways */}
       <section className="py-section-gap px-[5%] bg-surface">
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Card 1: Bhairavam */}
+          {/* Card 1: About / Manish Nirgunam */}
           <div className="scroll-reveal">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
               <img 
@@ -124,14 +124,17 @@ export default function Home() {
                 <span className="material-symbols-outlined text-white text-3xl">self_improvement</span>
               </div>
             </div>
-            <h3 className="font-display text-3xl mb-4 text-primary-container">Bhairavam</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">The path beyond description.</p>
-            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/bhairavam">
-              Explore Bhairavam <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">About</span>
+            <h3 className="font-display text-3xl mb-3 text-primary-container font-semibold">Manish Nirgunam</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
+              A reflecting spiritual being — not a guru, not a teacher. Just someone deeply connected to the truth of existence, sharing from lived experience.
+            </p>
+            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/about">
+              Explore About <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
             </Link>
           </div>
 
-          {/* Card 2: Yatra */}
+          {/* Card 2: The Practice / What is Bhairavam? */}
           <div className="scroll-reveal" style={{ transitionDelay: '200ms' }}>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
               <img 
@@ -143,14 +146,17 @@ export default function Home() {
                 <span className="material-symbols-outlined text-white text-3xl">temple_hindu</span>
               </div>
             </div>
-            <h3 className="font-display text-3xl mb-4 text-primary-container">Yatra</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">Sacred journeys that transform.</p>
-            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/yatra">
-              Explore Yatra <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">The Practice</span>
+            <h3 className="font-display text-3xl mb-3 text-primary-container font-semibold">What is Bhairavam?</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
+              The pulse of the universe. The silence within. Beyond description — Bhairavam is already alive inside you right now, waiting to be seen.
+            </p>
+            <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/bhairavam">
+              Explore Bhairavam <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
             </Link>
           </div>
 
-          {/* Card 3: Meditation */}
+          {/* Card 3: Sri Mata Group / Our 3 Wings */}
           <div className="scroll-reveal" style={{ transitionDelay: '400ms' }}>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-8 museum-shadow group">
               <img 
@@ -162,10 +168,13 @@ export default function Home() {
                 <span className="material-symbols-outlined text-white text-3xl">spa</span>
               </div>
             </div>
-            <h3 className="font-display text-3xl mb-4 text-primary-container">Meditation</h3>
-            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-8">The gateway to inner silence.</p>
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#c26100] mb-2 block">Sri Mata Group</span>
+            <h3 className="font-display text-3xl mb-3 text-primary-container font-semibold">Our 3 Wings</h3>
+            <p className="font-body text-on-surface-variant text-sm leading-relaxed mb-6 font-light">
+              Yatra, Products, and Dharmic Classes — three pillars serving the Sanatana Dharma with devotion and purpose across India.
+            </p>
             <Link className="inline-flex items-center gap-2 text-[10px] uppercase font-bold tracking-widest text-secondary group" to="/journey">
-              Explore Meditation <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+              Explore Our Wings <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
             </Link>
           </div>
         </div>
@@ -258,7 +267,7 @@ export default function Home() {
             {/* Product 1 */}
             <Link to="/products" className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow block">
               <img alt="Moksha Lakshmii Photo Frame" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="/lakshmi_frame.png" />
-              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent p-10 flex flex-col justify-end">
                 <span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Product 01</span>
                 <h3 className="font-display text-4xl text-surface mb-2">Moksha Lakshmii Photo Frame</h3>
                 <p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
@@ -269,7 +278,7 @@ export default function Home() {
             {/* Product 2 */}
             <Link to="/products" className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow block" style={{ transitionDelay: '200ms' }}>
               <img alt="Aadi Lingam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="/shiva_lingam.png" />
-              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent p-10 flex flex-col justify-end">
                 <span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Product 02</span>
                 <h3 className="font-display text-4xl text-surface mb-2">Aadi Lingam</h3>
                 <p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
@@ -280,7 +289,7 @@ export default function Home() {
             {/* Product 3 */}
             <Link to="/products" className="group relative rounded-image overflow-hidden aspect-[4/3] scroll-reveal minimal-shadow block" style={{ transitionDelay: '400ms' }}>
               <img alt="Parad Lingam" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" src="/shiva_lingam.png" />
-              <div className="absolute inset-0 bg-primary/30 p-10 flex flex-col justify-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent p-10 flex flex-col justify-end">
                 <span className="text-[9px] uppercase tracking-[0.3em] text-surface/70 mb-2">Product 03</span>
                 <h3 className="font-display text-4xl text-surface mb-2">Parad Lingam</h3>
                 <p className="text-sm text-surface/80 font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
@@ -440,7 +449,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-primary/40"></div>
         </div>
         <div className="relative z-10 text-center px-[5%] scroll-reveal">
-          <h2 className="font-display text-5xl md:text-7xl lg:text-[88px] leading-[1.05] text-surface mb-8">Every Journey Begins<br className="hidden md:block" />With A Single Step</h2>
+          <h2 className="font-display text-5xl md:text-7xl lg:text-[88px] leading-[1.05] text-surface mb-8">Don't limit yourself,<br className="hidden md:block" />you are infinite</h2>
           <p className="font-body text-surface/80 text-xl lg:text-2xl font-light mb-16 max-w-3xl mx-auto">Step into a path of wisdom, meditation, and inner awakening.</p>
           <button className="bg-surface text-primary-container px-14 py-6 rounded-button text-[12px] uppercase font-bold tracking-[0.2em] hover:bg-secondary hover:text-surface transition-all transform hover:scale-105 flex items-center gap-4 mx-auto">
             Begin Your Journey
